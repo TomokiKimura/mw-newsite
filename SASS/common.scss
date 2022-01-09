@@ -1,0 +1,203 @@
+@import "_normalize";
+@import "_mixin";
+
+body {
+  @include base-fontFamily;
+  color: #333;
+  p {
+    @include base-p;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  transition: 0.5s;
+  &.scroll-nav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    .sub-header {
+      display: none;
+    }
+    .pc-header {
+      padding-bottom: 0 !important;
+      transition: 0.5s;
+    }
+  }
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    .sub-header {
+      h1 {
+        font-size: 0.9rem;
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+    }
+    .pc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      .h-logo {
+        width: 230px;
+        a {
+          text-decoration: none;
+          color: #333;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .h-nav {
+        ul {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          li {
+            list-style: none;
+            margin-left: 1.8rem;
+            font-weight: bold;
+            font-size: 0.9rem;
+            a {
+              text-decoration: none;
+              color: #333;
+              position: relative;
+              padding-bottom: 0.5rem;
+              &::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: "";
+                width: 0;
+                height: 1px;
+                background-color: #333;
+                transition: 0.3s;
+              }
+              &:hover::after {
+                width: 100%;
+              }
+            }
+            a#user-page::after {
+              width: 100%;
+            }
+            // &.h-cv {
+            //   @include cv-btn;
+            // }
+            &.detail-btn {
+              @include detail-btn;
+              margin: 0 0 0 1.8rem;
+              a:hover::after {
+                display: none;
+              }
+              span {
+                padding: 12px 24px 12px 24px !important;
+                &::after {
+                  display: none;
+                }
+       
+              }
+            }
+          }
+        }
+      }
+    }
+  } //wrapper
+}
+.breadCrumb {
+  margin-top: 95px !important;
+  ul {
+    display: flex;
+    padding: 2rem 0 0;
+    li {
+      list-style: none;
+      margin-right: 0.75rem;
+      &:nth-child(2n) {
+        line-height: 18px;
+      }
+    }
+  }
+}
+h1.page-h1 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  margin: 8rem auto 3rem;
+}
+.h1-desc p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+h2.bl-b {
+  border-left: solid 5px #7db4e6;
+  padding-left: 0.75rem;
+  // font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4rem;
+}
+h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+.block-layout {
+  @include block-layout;
+}
+.parallax {
+  @include cta-btn;
+  margin-top: 4rem;
+}
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .footer-container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .f-left {
+      p.f-p1 {
+        margin-top: 0.5rem;
+        font-weight: bold;
+      }
+      .f-logo {
+        width: 230px;
+        a {
+          // text-decoration: none;
+          // color: #333;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .f-address p {
+        margin: 0;
+        letter-spacing: 0;
+      }
+    }
+    .f-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        font-weight: bold;
+        list-style: none;
+        margin: 1rem;
+        a {
+          text-decoration: none;
+          color: #333;
+          transition: 0.5s;
+          &:hover {
+            opacity: 0.6;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
