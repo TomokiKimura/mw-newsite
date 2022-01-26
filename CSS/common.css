@@ -297,6 +297,10 @@ header .wrapper .pc-header .h-nav ul li a {
   padding-bottom: 0.5rem;
 }
 
+header .wrapper .pc-header .h-nav ul li a:hover {
+  cursor: pointer;
+}
+
 header .wrapper .pc-header .h-nav ul li a::after {
   position: absolute;
   bottom: 0;

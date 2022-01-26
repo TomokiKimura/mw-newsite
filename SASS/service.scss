@@ -8,33 +8,46 @@
     width: 1100px;
     margin: 0 auto;
   }
-  .service-bg {
-    padding: 3.5rem 0 1rem;
-    background: #f3f3f3;
-    h2 {
-      margin: 1.25rem 0 4.5rem;
-      font-size: 1.75rem;
-      letter-spacing: 0.15rem;
-      text-align: center;
-      position: relative;
-      padding-bottom: 1rem;
-      &:before {
-        position: absolute;
-        bottom: -10px;
-        left: calc(50% - 30px);
-        width: 60px;
-        height: 5px;
-        content: '';
-        border-radius: 3px;
-        background: #a5a4a4;
-      }
-    }
-    .service-container {
-      @include service-container;
-    }
+  // .service-bg {
+  //   padding: 3.5rem 0 1rem;
+  //   background: #f3f3f3;
+
+  // h2 {
+  //   margin: 1.25rem 0 4.5rem;
+  //   font-size: 1.75rem;
+  //   letter-spacing: 0.15rem;
+  //   text-align: center;
+  //   position: relative;
+  //   padding-bottom: 1rem;
+  //   &:before {
+  //     position: absolute;
+  //     bottom: -10px;
+  //     left: calc(50% - 30px);
+  //     width: 60px;
+  //     height: 5px;
+  //     content: "";
+  //     border-radius: 3px;
+  //     background: #a5a4a4;
+  //   }
+  // }
+
+  .service-container {
+    @include service-container;
+    padding-bottom: 5rem;
   }
+  // }
   .parallax {
     margin-top: 0;
+  }
+}
+.footer-serviceList {
+  background: #f3f3f3;
+  .service-ttl {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    padding: 4rem 0 1rem;
   }
 }
 
@@ -59,6 +72,36 @@
       }
       .block-desc p {
         letter-spacing: 1px;
+      }
+    }
+  }
+}
+//----------------LPページ制作
+.service-lppage {
+  .service-contents {
+    .lp-container {
+      .block2 {
+        .img-wrap {
+          ul {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            li {
+              list-style: none;
+              width: 16%;
+              background: url(../IMG/lp/arrow-r.png)no-repeat right;
+              background-size: 24px;
+              // padding-right: 24px;
+              padding-right: 3.2%;
+              &:last-child {
+                background: none;
+              }
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
       }
     }
   }
