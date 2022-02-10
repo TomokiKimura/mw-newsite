@@ -183,8 +183,10 @@
 }
 
 #top .feature .ttl-block h2 {
+  font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.2rem;
+  margin: 1rem;
 }
 
 #top .feature .feature-container {
@@ -199,7 +201,7 @@
   width: 280px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   padding: 1rem;
 }
 
@@ -216,6 +218,8 @@
   font-size: 1.15rem;
   line-height: 1.8rem;
   text-align: center;
+  font-weight: bold;
+  margin: 1rem;
 }
 
 #top .feature .feature-container .feature-block .f-desc p {
@@ -304,8 +308,10 @@
 }
 
 #top .service .ttl-block h2 {
+  font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.2rem;
+  margin: 1rem;
 }
 
 #top .service .service-container {
@@ -391,8 +397,10 @@
 }
 
 #top .product .ttl-block h2 {
+  font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.2rem;
+  margin: 1rem;
 }
 
 #top .product .product-container {
@@ -526,8 +534,10 @@
 }
 
 #top .question .ttl-block h2 {
+  font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.2rem;
+  margin: 1rem;
 }
 
 #top .question .question-container .detail-btn {
@@ -609,8 +619,10 @@
 }
 
 #top .blog .ttl-block h2 {
+  font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.2rem;
+  margin: 1rem;
 }
 
 #top .blog .blog-container .blog-wrap {
@@ -621,7 +633,7 @@
 
 #top .blog .blog-container .blog-wrap .blog-block {
   width: 28%;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   padding: 1rem;
   border-radius: 3px;
   background: #f3f3f3;

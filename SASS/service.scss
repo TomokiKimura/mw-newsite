@@ -89,7 +89,7 @@
             li {
               list-style: none;
               width: 16%;
-              background: url(../IMG/lp/arrow-r.png)no-repeat right;
+              background: url(../IMG/lp/arrow-r.png) no-repeat right;
               background-size: 24px;
               // padding-right: 24px;
               padding-right: 3.2%;
@@ -101,6 +101,44 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+//----------------WEB広告運用
+body.service-advertisement {
+  .block1 {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+
+    .block1-2 {
+      margin-bottom: 1.75rem;
+      h3 {
+        display: inline-block;
+        background: url(../IMG/advertisement/ico-check.svg) no-repeat left;
+        background-size: 18px;
+        padding-left: 24px;
+      }
+    }
+  }
+  .block2 {
+    .block2-wrap {
+      display: flex;
+      justify-content: space-between;
+      .block2-1 {
+        padding: 2rem 3rem;
+        width: 40%;
+        border: 1px solid #333;
+        h3 {
+          margin-top: 0;
+        }
+        ul li {
+          list-style: inherit;
+          font-size: 18px;
+          letter-spacing: 2px;
+          margin-bottom: 0.5rem;
         }
       }
     }

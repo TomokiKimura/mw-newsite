@@ -1,4 +1,4 @@
-@import "_normalize";
+@import "_reset";
 @import "_mixin";
 
 body {
@@ -31,10 +31,10 @@ header {
     margin: 0 auto;
     padding: 0 40px;
     .sub-header {
+      margin-top: 1rem;
       h1 {
         font-size: 0.9rem;
         font-weight: normal;
-        margin-bottom: 0;
       }
     }
     .pc-header {
@@ -126,6 +126,7 @@ header {
 h1.page-h1 {
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
   letter-spacing: 0.25rem;
   margin: 8rem auto 3rem;
 }
@@ -141,7 +142,15 @@ h2.bl-b {
   letter-spacing: 0.2rem;
   margin-bottom: 4rem;
 }
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  letter-spacing: 0.1rem;
+}
 h3 {
+  font-weight: bold;
+  margin: 1rem 0;
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
 }

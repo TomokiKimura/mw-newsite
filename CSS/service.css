@@ -139,4 +139,43 @@
 .service-lppage .service-contents .lp-container .block2 .img-wrap ul li img {
   width: 100%;
 }
+
+body.service-advertisement .block1 {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+body.service-advertisement .block1 .block1-2 {
+  margin-bottom: 1.75rem;
+}
+
+body.service-advertisement .block1 .block1-2 h3 {
+  display: inline-block;
+  background: url(../IMG/advertisement/ico-check.svg) no-repeat left;
+  background-size: 18px;
+  padding-left: 24px;
+}
+
+body.service-advertisement .block2 .block2-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+body.service-advertisement .block2 .block2-wrap .block2-1 {
+  padding: 2rem 3rem;
+  width: 40%;
+  border: 1px solid #333;
+}
+
+body.service-advertisement .block2 .block2-wrap .block2-1 h3 {
+  margin-top: 0;
+}
+
+body.service-advertisement .block2 .block2-wrap .block2-1 ul li {
+  list-style: inherit;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
 /*# sourceMappingURL=service.css.map */

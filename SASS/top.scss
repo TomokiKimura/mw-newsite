@@ -121,7 +121,7 @@
         // height: 410px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        border: 1px solid #DDDDDD;
+        border: 1px solid #dddddd;
         padding: 1rem;
         .f-icon {
           width: 160px;
@@ -135,6 +135,8 @@
             font-size: 1.15rem;
             line-height: 1.8rem;
             text-align: center;
+            font-weight: bold;
+            margin: 1rem;
           }
           p {
             text-align: justify;
@@ -153,50 +155,6 @@
     @include ttl-block;
     .service-container {
       @include service-container;
-      // flex-wrap: wrap;
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: center;
-      // .service-block {
-      //   width: 440px;
-      //   height: 200px;
-      //   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      //   border-radius: 10px;
-      //   padding: 1rem;
-      //   margin-bottom: 48px;
-      //   transition: 0.5s;
-      //   a {
-      //     text-decoration: none;
-      //     display: flex;
-      //     justify-content: space-between;
-      //     align-items: center;
-      //     color: #333;
-      //     .s-icon {
-      //       width: 25%;
-      //       margin: 0 auto;
-      //       img {
-      //         width: 100%;
-      //       }
-      //     }
-      //     .s-desc {
-      //       width: 70%;
-      //       margin-left: 5%;
-      //       h3 {
-      //         font-size: 1.15rem;
-      //       }
-      //       p {
-      //         text-align: justify;
-      //       }
-      //     }
-      //   }
-      //   &:hover {
-      //     background: rgb(247, 245, 245);
-      //     transition: 0.5s;
-      //     transform: translateY(-4px);
-      //     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12),
-      //       0 4px 7px -2px rgba(0, 0, 0, 0.2);
-      //   }
-      // }
     }
   }
   .product {
@@ -272,7 +230,7 @@
         align-items: center;
         .blog-block {
           width: 28%;
-          border: 1px solid #DDDDDD;
+          border: 1px solid #dddddd;
           padding: 1rem;
           border-radius: 3px;
           background: #f3f3f3;
