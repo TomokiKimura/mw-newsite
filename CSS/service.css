@@ -157,25 +157,56 @@ body.service-advertisement .block1 .block1-2 h3 {
   padding-left: 24px;
 }
 
+body.service-advertisement .block2 {
+  padding-bottom: 4.75rem;
+  margin-bottom: 5rem;
+}
+
 body.service-advertisement .block2 .block2-wrap {
   display: flex;
   justify-content: space-between;
 }
 
-body.service-advertisement .block2 .block2-wrap .block2-1 {
-  padding: 2rem 3rem;
+body.service-advertisement .block2 .block2-wrap .block2-1,
+body.service-advertisement .block2 .block2-wrap .block2-2 {
+  padding: 2rem 2.5rem;
   width: 40%;
   border: 1px solid #333;
 }
 
-body.service-advertisement .block2 .block2-wrap .block2-1 h3 {
+body.service-advertisement .block2 .block2-wrap .block2-1 h3,
+body.service-advertisement .block2 .block2-wrap .block2-2 h3 {
   margin-top: 0;
 }
 
-body.service-advertisement .block2 .block2-wrap .block2-1 ul li {
-  list-style: inherit;
-  font-size: 18px;
-  letter-spacing: 2px;
-  margin-bottom: 0.5rem;
+body.service-advertisement .block2 .block2-wrap .block2-1 table,
+body.service-advertisement .block2 .block2-wrap .block2-2 table {
+  width: 100%;
+}
+
+body.service-advertisement .block2 .block2-wrap .block2-1 table tr:nth-child(1) td,
+body.service-advertisement .block2 .block2-wrap .block2-2 table tr:nth-child(1) td {
+  padding-bottom: 0.75rem;
+}
+
+body.service-advertisement .block2 .block2-wrap .block2-1 table tr td,
+body.service-advertisement .block2 .block2-wrap .block2-2 table tr td {
+  width: 35%;
+}
+
+body.service-maintenance .service-contents .maintenance-container .block1 {
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+body.service-maintenance .service-contents .maintenance-container .block1 .block1-2 {
+  margin-bottom: 1.75rem;
+}
+
+body.service-maintenance .service-contents .maintenance-container .block1 .block1-2 h3 {
+  display: inline-block;
+  background: url(../IMG/advertisement/ico-check.svg) no-repeat left;
+  background-size: 18px;
+  padding-left: 24px;
 }
 /*# sourceMappingURL=service.css.map */
