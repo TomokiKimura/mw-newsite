@@ -326,7 +326,7 @@
 #top .service .service-container .service-block {
   width: 470px;
   background: #fff;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 1.5rem;
@@ -376,6 +376,8 @@
 #top .service .service-container .service-block a .s-desc span {
   font-size: 14px;
   font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 #top .service .service-container .service-block:hover {
@@ -419,6 +421,7 @@
 
 #top .product .product-container .product-box a {
   text-decoration: none;
+  transition: 0.4s;
 }
 
 #top .product .product-container .product-box a img {
@@ -446,10 +449,13 @@
   margin-top: 0.5rem;
 }
 
-#top .product .product-container .product-box a:hover img {
-  transform: scale(1.05);
+#top .product .product-container .product-box a:hover {
   opacity: 0.8;
   transition: 0.4s;
+}
+
+#top .product .product-container .product-box a:hover img {
+  transform: scale(1.05);
   transition: transform 0.4s;
 }
 

@@ -94,11 +94,12 @@ accordionsArr.forEach((accordion) => {
     trigger.addEventListener("click", (e) => {
       accordionTriggersArr.forEach((trigger) => {
         // クリックしたアコーディオン以外を全て閉じる
-        if (trigger !== e.target.parentElement) {
-          trigger.classList.remove("is-active");
-          const openedContent = trigger.querySelector(".accordion__content");
-          slideUp(openedContent);
-        }
+
+        // if (trigger !== e.target.parentElement) {
+        //   trigger.classList.remove("is-active");
+        //   const openedContent = trigger.querySelector(".accordion__content");
+        //   slideUp(openedContent);
+        // }
       });
       // '.is-active'クラスを付与or削除
       trigger.classList.toggle("is-active");

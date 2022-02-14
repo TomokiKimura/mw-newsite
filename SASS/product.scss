@@ -1,0 +1,56 @@
+@import "_mixin";
+
+body#product {
+  .product-container {
+    @include product-container;
+    .product-box {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+// -----------実績詳細
+body#productDesc {
+  .productDesc-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    h1 {
+      text-align: center;
+    }
+    .product-kv {
+      width: 100%;
+      margin: 0 auto;
+      padding: 4rem 0;
+      background: #f3f3f3;
+      text-align: center;
+      img {
+        width: 50%;
+      }
+    }
+    .productDesc-wrap table {
+      width: 80%;
+      margin: 6rem auto;
+      border-collapse: collapse;
+      tr td {
+        padding: 1.25rem 2rem;
+        font-size: 1rem;
+        border-bottom: 1px solid #333;
+        a {
+          text-decoration: underline;
+          color: #333;
+        }
+      }
+
+    }
+
+    .fullscreen-img {
+      border: 1px solid #DDDDDD;
+      width: 100%;
+      margin: 6rem auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
