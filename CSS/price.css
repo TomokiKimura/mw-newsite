@@ -1,6 +1,6 @@
 body#price .price-container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -41,7 +41,65 @@ body#price .price-container h2 {
   border-left: 5px solid #6095FA;
 }
 
+body#price .price-container .hp-block {
+  margin-top: 5rem;
+}
+
 body#price .price-container .hp-block .hp-wrap {
   display: flex;
+  margin-top: 3rem;
+}
+
+body#price .price-container .hp-block .hp-wrap .priceWrap-desc {
+  margin-left: 17%;
+}
+
+body#price .price-container .hp-block .hp-wrap .priceWrap-desc span.p-case {
+  padding: 8px 10px 8px 11px;
+  background: #575656;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+body#price .price-container .hp-block .hp-wrap .priceWrap-desc p.p-p2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+body#price .price-container .hp-block .hp-wrap .priceWrap-desc p.p-p3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: #053AC9;
+  margin: 1.25rem 0 1.25rem;
+}
+
+body#price .price-container .hp-block .hp-wrap .priceWrap-desc p.p-p3 span {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+body#price .price-container .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+body#price .price-container .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li:before {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0.36rem;
+  content: "";
+  background: #6095FA;
 }
 /*# sourceMappingURL=price.css.map */
