@@ -1,42 +1,42 @@
 @charset "UTF-8";
-#office header {
+body#office header {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-#office .address table {
+body#office .address table {
   width: 750px;
   margin: 0 auto;
   border-collapse: collapse;
 }
 
-#office .address table th,
-#office .address table td {
+body#office .address table th,
+body#office .address table td {
   border-bottom: 1px solid #ddd;
   font-size: 1.1rem;
   letter-spacing: 0.15rem;
   padding: 1.5rem;
 }
 
-#office .address table th {
+body#office .address table th {
   text-align: left;
   font-weight: normal;
   padding-left: 2rem;
   padding-right: 5rem;
 }
 
-#office .policy {
+body#office .policy {
   margin: 6rem auto;
   width: 900px;
 }
 
-#office .policy .policy-container .policy-wrap {
+body#office .policy .policy-container .policy-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
 }
 
-#office .policy .policy-container .policy-wrap img {
+body#office .policy .policy-container .policy-wrap img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -47,29 +47,29 @@
   /*IE edge対策js*/
 }
 
-#office .policy .policy-container .policy-wrap .policy-text {
+body#office .policy .policy-container .policy-wrap .policy-text {
   width: 550px;
 }
 
-#office .policy .policy-container .policy-wrap .policy-text p {
+body#office .policy .policy-container .policy-wrap .policy-text p {
   text-align: justify;
 }
 
-#office .self {
+body#office .self {
   margin: 6rem auto;
   width: 900px;
 }
 
-#office .self .self-wrap {
+body#office .self .self-wrap {
   display: flex;
   justify-content: space-between;
 }
 
-#office .self .self-wrap .self-img {
+body#office .self .self-wrap .self-img {
   margin-top: 2rem;
 }
 
-#office .self .self-wrap .self-img img {
+body#office .self .self-wrap .self-img img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -79,20 +79,20 @@
   /*IE edge対策js*/
 }
 
-#office .self .self-wrap .self-text {
+body#office .self .self-wrap .self-text {
   width: 550px;
 }
 
-#office .self .self-wrap .self-text p {
+body#office .self .self-wrap .self-text p {
   text-align: justify;
 }
 
-#office .self .self-wrap .self-text p:nth-child(1) {
+body#office .self .self-wrap .self-text p:nth-child(1) {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-#office .self .self-wrap .self-text p:nth-child(2) {
+body#office .self .self-wrap .self-text p:nth-child(2) {
   color: #605f5f;
 }
 /*# sourceMappingURL=office.css.map */

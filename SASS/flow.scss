@@ -4,16 +4,13 @@
 body#flow {
   // color: red;
   .flow-container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
+    @include common-layout;
     .flowBlock {
       @include flowLabel;
       margin-bottom: 5rem;
       p.flowDesc {
         padding-left: 130px;
         // margin-top: 1rem;
-        
       }
     }
   }

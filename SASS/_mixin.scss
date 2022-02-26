@@ -37,6 +37,12 @@
   padding: 0 40px;
   margin: 0 auto;
 }
+
+@mixin common-layout {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 @mixin block-layout {
   max-width: 1000px;
   margin: 0 auto;

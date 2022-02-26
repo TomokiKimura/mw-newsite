@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="331" height="215.5" viewBox="0 0 331 215.5">
+  <g id="グループ_79" data-name="グループ 79" transform="translate(-200 -714)">
+    <g id="長方形_75" data-name="長方形 75" transform="translate(200 812)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="73" height="41" stroke="none"/>
+      <rect x="0.5" y="0.5" width="72" height="40" fill="none"/>
+    </g>
+    <g id="長方形_76" data-name="長方形 76" transform="translate(458 811)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="73" height="41" stroke="none"/>
+      <rect x="0.5" y="0.5" width="72" height="40" fill="none"/>
+    </g>
+    <g id="長方形_78" data-name="長方形 78" transform="translate(286 811)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="73" height="41" stroke="none"/>
+      <rect x="0.5" y="0.5" width="72" height="40" fill="none"/>
+    </g>
+    <g id="長方形_79" data-name="長方形 79" transform="translate(329 714)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="73" height="41" stroke="none"/>
+      <rect x="0.5" y="0.5" width="72" height="40" fill="none"/>
+    </g>
+    <line id="線_12" data-name="線 12" x2="258" transform="translate(236.5 774.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_13" data-name="線 13" y1="38" transform="translate(494.5 774.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_14" data-name="線 14" y1="19" transform="translate(365.5 755.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_15" data-name="線 15" y1="38" transform="translate(236.5 774.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_16" data-name="線 16" y1="38" transform="translate(322.5 774.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="お問合せ" transform="translate(463 839)" font-size="16" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">お問合せ</tspan></text>
+    <text id="サービス" transform="translate(291 838)" font-size="16" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">サービス</tspan></text>
+    <text id="会社概要" transform="translate(205 838)" font-size="16" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">会社概要</tspan></text>
+    <text id="TOP" transform="translate(348 741)" font-size="16" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">TOP</tspan></text>
+    <g id="グループ_84" data-name="グループ 84">
+      <g id="長方形_77" data-name="長方形 77" transform="translate(372 811)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="73" height="41" stroke="none"/>
+        <rect x="0.5" y="0.5" width="72" height="40" fill="none"/>
+      </g>
+      <line id="線_17" data-name="線 17" y1="38" transform="translate(408.5 774.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <g id="グループ_86" data-name="グループ 86">
+        <text id="ブログ" transform="translate(388 830)" fill="#393939" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">ブログ</tspan></text>
+        <text id="一覧" transform="translate(395 844)" fill="#393939" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">一覧</tspan></text>
+      </g>
+    </g>
+    <g id="長方形_80" data-name="長方形 80" transform="translate(458 811)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="73" height="41" stroke="none"/>
+      <rect x="0.5" y="0.5" width="72" height="40" fill="none"/>
+    </g>
+    <text id="お問合せ-2" data-name="お問合せ" transform="translate(463 839)" font-size="16" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">お問合せ</tspan></text>
+    <g id="グループ_85" data-name="グループ 85" transform="translate(0 77.5)">
+      <g id="長方形_77-2" data-name="長方形 77" transform="translate(372 811)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="73" height="41" stroke="none"/>
+        <rect x="0.5" y="0.5" width="72" height="40" fill="none"/>
+      </g>
+      <line id="線_17-2" data-name="線 17" y1="38" transform="translate(408.5 774.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <text id="ブログ-2" data-name="ブログ" transform="translate(388 829.5)" fill="#393939" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">ブログ</tspan></text>
+      <text id="記事" transform="translate(395 843.5)" fill="#393939" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">記事</tspan></text>
+    </g>
+  </g>
+</svg>
