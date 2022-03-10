@@ -38,23 +38,28 @@ body#price .price-container .select_btn ul li a:hover {
 
 body#price .price-container h2 {
   padding-left: 1rem;
-  border-left: 5px solid #6095FA;
+  border-left: 5px solid #6095fa;
 }
 
-body#price .price-container .hp-block {
+body#price .price-container .web-wrap {
+  border-bottom: 2px solid #dddddd;
+  padding-bottom: 4rem;
+}
+
+body#price .price-container .web-wrap .hp-block {
   margin-top: 5rem;
 }
 
-body#price .price-container .hp-block .hp-wrap {
+body#price .price-container .web-wrap .hp-block .hp-wrap {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
-body#price .price-container .hp-block .hp-wrap .priceWrap-desc {
+body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc {
   margin-left: 17%;
 }
 
-body#price .price-container .hp-block .hp-wrap .priceWrap-desc span.p-case {
+body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc span.p-case {
   padding: 8px 10px 8px 11px;
   background: #575656;
   color: #fff;
@@ -64,34 +69,34 @@ body#price .price-container .hp-block .hp-wrap .priceWrap-desc span.p-case {
   margin-bottom: 0.75rem;
 }
 
-body#price .price-container .hp-block .hp-wrap .priceWrap-desc p.p-p2 {
+body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc p.p-p2 {
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
 
-body#price .price-container .hp-block .hp-wrap .priceWrap-desc p.p-p3 {
-  font-size: 1.5rem;
+body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc p.p-p3 {
+  font-size: 1.75rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  color: #053AC9;
+  color: #053ac9;
   margin: 1.25rem 0 1.25rem;
 }
 
-body#price .price-container .hp-block .hp-wrap .priceWrap-desc p.p-p3 span {
+body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc p.p-p3 span {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
 }
 
-body#price .price-container .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li {
+body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li {
   list-style: none;
   position: relative;
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
 
-body#price .price-container .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li:before {
+body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li:before {
   border-radius: 50%;
   width: 5px;
   height: 5px;
@@ -100,6 +105,41 @@ body#price .price-container .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li:befor
   left: 0;
   top: 0.36rem;
   content: "";
-  background: #6095FA;
+  background: #6095fa;
+}
+
+body#price .price-container .advertisement-wrap {
+  margin-bottom: 9rem;
+  padding-top: 4rem;
+}
+
+body#price .price-container .advertisement-wrap .advertisement-block {
+  margin-bottom: 4rem;
+}
+
+body#price .price-container .advertisement-wrap .advertisement-block table {
+  width: 80%;
+  margin-left: 1rem;
+  border-collapse: collapse;
+}
+
+body#price .price-container .advertisement-wrap .advertisement-block table tr th {
+  width: 55%;
+}
+
+body#price .price-container .advertisement-wrap .advertisement-block table tr td {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: #053ac9;
+}
+
+body#price .price-container .advertisement-wrap .advertisement-block table tr th,
+body#price .price-container .advertisement-wrap .advertisement-block table tr td {
+  border-bottom: 1px solid #333;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 0.75rem;
 }
 /*# sourceMappingURL=price.css.map */
