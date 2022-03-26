@@ -15,7 +15,7 @@
 }
 
 #service .service-container .service-block {
-  width: 470px;
+  width: 43%;
   background: #fff;
   border: 1px solid #dddddd;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -59,9 +59,9 @@
 
 #service .service-container .service-block a .s-desc p:nth-child(2) {
   text-align: justify;
+  letter-spacing: 2px;
+  line-height: 28px;
   font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 1.25rem;
 }
 
 #service .service-container .service-block a .s-desc span {
@@ -75,6 +75,50 @@
   transition: 0.5s;
   transform: translateY(-4px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 999px) {
+  #service .service-container .service-block a .s-desc p:nth-child(2) {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+  }
+  #service .service-container .service-block a .s-desc span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  #service .service-container {
+    display: block;
+  }
+  #service .service-container .service-block {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  #service .service-container .service-block a {
+    display: block;
+  }
+  #service .service-container .service-block a .s-desc {
+    width: 100%;
+    margin: 0;
+  }
+  #service .service-container .service-block a .s-desc p:nth-child(1) {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  #service .service-container .service-block a .s-desc p:nth-child(2) {
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+  #service .service-container .service-block a .s-desc span {
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    color: #555454;
+  }
 }
 
 #service .parallax {

@@ -2,15 +2,49 @@
   font-family: Montserrat, 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
 }
 @mixin base-p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
   line-height: 34px;
+  @media screen and(max-width: 999px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media screen and(max-width: 799px) {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+}
+@mixin base-p2 {
+  // letter-spacing: 0.05rem;
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-size: 16px;
+  @media screen and(max-width: 999px) {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+  }
 }
 @mixin base-h2 {
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.2rem;
   margin: 1rem;
+}
+@mixin h2-bb-b {
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  text-align: center;
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #7db4e6;
+    margin: 1rem auto 0;
+  }
 }
 @mixin cv-btn {
   a {
@@ -104,7 +138,7 @@
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         position: absolute;
-        top: 40%;
+        top: 39%;
         right: 26px;
       }
       &:hover {
@@ -117,6 +151,34 @@
           border-top: solid 2px #fff;
           border-right: solid 2px #fff;
         }
+      }
+    }
+  }
+  @media screen and(max-width: 999px) {
+    a span {
+      font-size: 14px;
+      font-weight: normal;
+      padding: 12px 36px 12px 22px;
+      &::after {
+        position: absolute;
+        top: 39%;
+        right: 18px;
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+  @media screen and(max-width: 799px) {
+    a span {
+      font-size: 14px;
+      font-weight: normal;
+      padding: 10px 34px 10px 20px;
+      &::after {
+        position: absolute;
+        top: 39%;
+        right: 18px;
+        width: 6px;
+        height: 6px;
       }
     }
   }
@@ -134,7 +196,7 @@
   display: table;
   justify-content: center;
   &.cv-bg {
-    background-image: url(../IMG/bg1.jpg);
+    background-image: url(../IMG/common/bg1.jpg);
     width: 100%;
   }
   .cta {
@@ -205,6 +267,49 @@
       }
     }
   }
+  @media screen and(max-width: 999px) {
+    .cta {
+      p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+      }
+      .cta-btn {
+        a span {
+          font-size: 14px;
+          font-weight: normal;
+          padding: 12px 36px 12px 22px;
+          &::after {
+            position: absolute;
+            top: 39%;
+            right: 18px;
+            width: 6px;
+            height: 6px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 799px) {
+    height: 400px;
+    .cta {
+      p {
+        width: 90%;
+        letter-spacing: 1px;
+      }
+      .cta-btn {
+        a span {
+          padding: 10px 34px 10px 20px;
+          // &::after {
+          //   position: absolute;
+          //   top: 39%;
+          //   right: 18px;
+          //   width: 6px;
+          //   height: 6px;
+          // }
+        }
+      }
+    }
+  }
 }
 @mixin service-container {
   flex-wrap: wrap;
@@ -214,7 +319,8 @@
   max-width: 1100px;
   margin: 0 auto;
   .service-block {
-    width: 470px;
+    // width: 470px;
+    width: 43%;
     background: #fff;
     border: 1px solid #dddddd;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -248,9 +354,9 @@
         }
         p:nth-child(2) {
           text-align: justify;
+          letter-spacing: 2px;
+          line-height: 28px;
           font-size: 16px;
-          letter-spacing: 1px;
-          line-height: 1.25rem;
         }
         span {
           font-size: 14px;
@@ -267,9 +373,55 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
     }
   }
+  @media screen and(max-width: 999px) {
+    .service-block {
+      a {
+        .s-desc {
+          p:nth-child(2) {
+            font-size: 14px;
+            letter-spacing: 2px;
+            line-height: 24px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 799px) {
+    display: block;
+    .service-block {
+      width: 85%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      a {
+        display: block;
+        .s-desc {
+          width: 100%;
+          margin: 0;
+          p:nth-child(1) {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 1rem auto;
+          }
+          p:nth-child(2) {
+            letter-spacing: 1px;
+            line-height: 24px;
+          }
+          span {
+            font-size: 12px;
+            display: block;
+            text-align: right;
+            color: rgb(85, 84, 84);
+          }
+        }
+      }
+    }
+  }
 }
 @mixin product-container {
-  width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   flex-wrap: wrap;
   display: flex;
@@ -292,7 +444,7 @@
         font-size: 14px;
         color: #fff;
         display: inline-block;
-        padding: 2px 18px 0px;
+        padding: 2px 18px 2px;
         background-color: #333;
         border-radius: 15px;
         font-weight: bold;
@@ -311,6 +463,44 @@
         img {
           transform: scale(1.05);
           transition: transform 0.4s;
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 999px) {
+    display: block;
+    .product-box {
+      width: 85%;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+      // a {
+      //   .pro-cate {
+      //     font-weight: normal;
+      //     padding: 0px 8px 0px;
+      //     font-size: 12px;
+      //     letter-spacing: 1px;
+      //   }
+      //   .pro-name {
+      //     font-size: 16px;
+      //     font-weight: bold;
+      //     margin-top: 0.2rem;
+      //   }
+      // }
+    }
+  }
+  @media screen and(max-width: 799px) {
+    .product-box {
+      a {
+        .pro-cate {
+          font-weight: normal;
+          padding: 0px 8px 0px;
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        .pro-name {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 0.2rem;
         }
       }
     }

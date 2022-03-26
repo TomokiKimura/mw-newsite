@@ -9,7 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Make Web</title>
   <meta name="description" content="">
-  <link rel="icon" href="IMG/favicon.jpg">
+  <link rel="icon" href="IMG/common/favicon.jpg">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body id="top">
@@ -18,10 +19,10 @@
       <div class="sub-header">
         <h1>東京のweb制作事務所　|　メイクウェブ</h1>
       </div>
-      <div class="pc-header">
+      <div class="h-wrap">
         <div class="h-logo">
           <a href="#">
-            <img src="IMG/1.svg" alt="ロゴ">
+            <img src="IMG/common/1.svg" alt="ロゴ">
           </a>
         </div>
         <div class="h-nav">
@@ -33,20 +34,40 @@
             <li><a href="#">制作の流れ</a></li>
             <li><a href="#">料金</a></li>
             <li><a href="#">ブログ</a></li>
-            <li class="detail-btn">
-              <a href="#"><span>無料相談をする</span></a>
-            </li>
+            <li class="detail-btn"><a href="#"><span>無料相談をする</span></a></li>
             <!-- <li class="h-cv"><a class="btn-flat" href="#"><span>無料相談をする</span></a></li> -->
           </ul>
+        </div>
+        <div class="sp-h-nav">
+          <span class="material-icons" id="open">menu</span>
+        </div>
+        <div class="overlay">
+          <span class="material-icons" id="close">close</span>
+          <nav>
+            <ul id="close2">
+              <li><a id="user-page" href="#">HOME</a></li>
+              <li><a href="office/index.html">事務所概要</a></li>
+              <li><a href="service/index.html">サービス</a></li>
+              <li><a href="#">制作実績</a></li>
+              <li><a href="#">制作の流れ</a></li>
+              <li><a href="#">料金</a></li>
+              <li><a href="#">ブログ</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
   </header>
   <div class="kv">
     <div class="slide">
-      <img src="IMG/kv1.jpg" alt="web制作の資料を見る人">
-      <img src="IMG/kv2.jpg" alt="PC画面に表示するweb制作の資料">
-      <img src="IMG/kv3.jpg" alt="画像表示されているパソコン">
+      <img src="IMG/top/kv1.jpg" alt="web制作の資料を見る人">
+      <img src="IMG/top/kv2.jpg" alt="PC画面に表示するweb制作の資料">
+      <img src="IMG/top/kv3.jpg" alt="画像表示されているパソコン">
+    </div>
+    <div class="sp-slide">
+      <img src="IMG/top/sp-kv1.jpg" alt="web制作の資料を見る人">
+      <img src="IMG/top/sp-kv2.jpg" alt="PC画面に表示するweb制作の資料">
+      <img src="IMG/top/sp-kv3.jpg" alt="画像表示されているパソコン">
     </div>
     <p class="slider_range">
       表示時間：<input type="range" id="slide_speed" value="200" min="8000" max="10000">
@@ -67,14 +88,14 @@
         <h2>3つの特徴</h2>
       </div>
       <div>
-        <p>個人事業所ならではの私たちの特徴をご紹介いたします。</p>
+        <p>個人事業所ならではの<br>私たちの特徴をご紹介いたします。</p>
       </div>
     </div>
     <!-- <div class="feature-container block-layout"> -->
     <div class="feature-container">
       <div class="feature-block">
         <div class="f-icon">
-          <img src="IMG/feature2.png" alt="会議のアイコン">
+          <img src="IMG/top/feature2.png" alt="個人事業のweb制作">
         </div>
         <div class="f-desc">
           <h3>担当者がワンストップ<br>で対応いたします。</h3>
@@ -83,7 +104,7 @@
       </div>
       <div class="feature-block">
         <div class="f-icon">
-          <img src="IMG/feature1.png" alt="会議のアイコン">
+          <img src="IMG/top/feature1.png" alt="個人事業のweb制作">
         </div>
         <div class="f-desc">
           <h3>柔軟で迅速な対応<br>が可能です。</h3>
@@ -92,7 +113,7 @@
       </div>
       <div class="feature-block">
         <div class="f-icon">
-          <img src="IMG/feature3.png" alt="会議のアイコン">
+          <img src="IMG/top/feature3.png" alt="個人事業のweb制作">
         </div>
         <div class="f-desc">
           <h3>制作コストを抑える<br>ことができます。</h3>
@@ -128,7 +149,7 @@
       <div class="service-block">
         <a href="service/homepage/index.html">
           <div class="s-icon">
-            <img src="IMG/service1.png" alt="ホームページアイコン">
+            <img src="IMG/service/service1.png" alt="ホームページアイコン">
           </div>
           <div class="s-desc">
             <p>ホームページ制作</p>
@@ -140,7 +161,7 @@
       <div class="service-block">
         <a href="#">
           <div class="s-icon">
-            <img src="IMG/service2.png" alt="ランディングページアイコン">
+            <img src="IMG/service/service2.png" alt="ランディングページアイコン">
           </div>
           <div class="s-desc">
             <p>ランディングページ制作</p>
@@ -152,7 +173,7 @@
       <div class="service-block">
         <a href="#">
           <div class="s-icon">
-            <img src="IMG/service3.png" alt="広告運用アイコン">
+            <img src="IMG/service/service3.png" alt="広告運用アイコン">
           </div>
           <div class="s-desc">
             <p>運用型広告・運用代行</p>
@@ -164,7 +185,7 @@
       <div class="service-block">
         <a href="#">
           <div class="s-icon">
-            <img src="IMG/service4.png" alt="サイト保守・運用アイコン">
+            <img src="IMG/service/service4.png" alt="サイト保守・運用アイコン">
           </div>
           <div class="s-desc">
             <p>Webサイト保守・管理</p>
@@ -313,10 +334,10 @@
         <div>
           <div class="f-logo">
             <a href="#">
-              <img src="IMG/1.svg" alt="ロゴ">
+              <img src="IMG/common/1.svg" alt="ロゴ">
             </a>
           </div>
-          <p class="f-p1">BtoBサイトを得意とする事業所</p>
+          <p class="f-p1">BtoBサイトを得意とするweb制作事業所</p>
         </div>
         <div class="f-address">
           <p>〒183-0013</p>

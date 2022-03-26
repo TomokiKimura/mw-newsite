@@ -1,7 +1,7 @@
 //kvスライド 
 window.addEventListener('load', function () {
 	viewSlide('.slide img');
-	// viewSlide('.sp_slide img'); 
+	viewSlide('.sp-slide img'); 
 });
 function viewSlide(className, slideNo = -1) {
 	let imgArray = document.querySelectorAll(className);
