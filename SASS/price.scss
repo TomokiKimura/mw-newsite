@@ -3,7 +3,7 @@
 body#price {
   .price-container {
     // @include common-layout;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
     .select_btn {
@@ -39,11 +39,12 @@ body#price {
     }
     .web-wrap {
       border-bottom: 2px solid #dddddd;
-      padding-bottom: 4rem;
+      padding-bottom: 8rem;
       .hp-block {
         margin-top: 5rem;
         .hp-wrap {
           display: flex;
+          justify-content: center;
           margin-top: 4rem;
           .priceWrap-desc {
             margin-left: 17%;
@@ -98,17 +99,18 @@ body#price {
     }
     .advertisement-wrap {
       margin-bottom: 9rem;
-      padding-top: 4rem;
+      padding-top: 8rem;
       .advertisement-block {
         margin-bottom: 4rem;
         table {
-          width: 80%;
-          margin-left: 1rem;
+          width: 100%;
+          // margin-left: 1rem;
           // margin: 0 auto;
           border-collapse: collapse;
           tr {
             th {
               width: 55%;
+              padding-left: 3rem !important;
             }
             td {
               font-size: 1.5rem;
@@ -123,6 +125,106 @@ body#price {
               font-size: 18px;
               letter-spacing: 1px;
               padding: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 799px) {
+    .price-container {
+      .select_btn {
+        ul li a span {
+          font-size: 14px;
+        }
+      }
+      .web-wrap {
+        .hp-block {
+          h2 {
+            @include h2-bb-b;
+            padding: 0;
+            border: none;
+          }
+          .hp-wrap {
+            display: block;
+            margin: 4rem auto 0;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid #ddd;
+            .priceWrap-img {
+              width: 50%;
+              margin: 0 auto;
+              img {
+                width: 100%;
+              }
+            }
+            .priceWrap-desc {
+              margin: 4rem auto 0;
+              width: 50%;
+            }
+          }
+          &:nth-child(2) {
+            .hp-wrap {
+              border: none;
+            }
+          }
+        }
+      }
+      .advertisement-wrap {
+        margin-bottom: 12rem;
+        .advertisement-block {
+          margin-bottom: 6rem;
+          h2 {
+            @include h2-bb-b;
+            padding: 0;
+            border: none;
+          }
+          table tr {
+            th {
+              width: 60%;
+            }
+            th,
+            td {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 499px) {
+    .price-container {
+      .web-wrap {
+        .hp-block {
+          .hp-wrap {
+            .priceWrap-img {
+              width: 90%;
+              margin: 0 auto;
+            }
+            .priceWrap-desc {
+              margin: 4rem auto 0;
+              width: 100%;
+              text-align: center;
+              .p-p4 ul li {
+                // display: inline-block;
+                &::before {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .advertisement-wrap {
+        .advertisement-block {
+          table tr {
+            th {
+              padding-left: 0.5rem !important;
+              width: 55%;
+              padding: 1.5rem 0.5rem 0.5rem;
+            }
+            th, td {
+              font-size: 13px;
+
             }
           }
         }

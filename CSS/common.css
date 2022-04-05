@@ -445,11 +445,12 @@ header .wrapper .h-wrap .overlay.show li:nth-child(7) {
 .breadCrumb {
   margin-top: 95px;
   width: 90%;
+  max-width: 1100px !important;
 }
 
 .breadCrumb ul {
   display: flex;
-  padding: 2rem 0 0;
+  padding: 3rem 0 0;
 }
 
 .breadCrumb ul li {
@@ -468,6 +469,18 @@ header .wrapper .h-wrap .overlay.show li:nth-child(7) {
   .breadCrumb {
     margin-top: 85px;
   }
+  .breadCrumb ul li {
+    background: url(../IMG/common/arrow-right.png) no-repeat right 2px;
+    background-size: 8px;
+    padding-right: 22px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .breadCrumb ul li {
+    background: url(../IMG/common/arrow-right.png) no-repeat right 1px;
+    background-size: 8px;
+  }
 }
 
 h1.page-h1 {
@@ -478,9 +491,20 @@ h1.page-h1 {
   margin: 8rem auto 3rem;
 }
 
+.h1-desc {
+  width: 94%;
+  margin: 0 auto;
+}
+
 .h1-desc p {
   text-align: center;
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 799px) {
+  .h1-desc p br {
+    display: none;
+  }
 }
 
 h2.bl-b {
@@ -517,7 +541,7 @@ h3 {
   height: 500px;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   position: relative;
   text-align: center;
   display: table;
@@ -606,6 +630,9 @@ h3 {
 }
 
 @media screen and (max-width: 999px) {
+  .parallax {
+    height: 300px;
+  }
   .parallax .cta p {
     font-size: 1.25rem;
     line-height: 2rem;
@@ -626,7 +653,11 @@ h3 {
 
 @media screen and (max-width: 799px) {
   .parallax {
-    height: 400px;
+    height: 200px;
+  }
+  .parallax.cv-bg {
+    background-image: url(../IMG/common/sp-bg1.jpg);
+    width: 100%;
   }
   .parallax .cta p {
     width: 90%;

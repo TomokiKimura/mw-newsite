@@ -5,12 +5,50 @@ body#flow {
   // color: red;
   .flow-container {
     @include common-layout;
+    margin-bottom: 10rem;
+    // padding: 0 20px;
+    width: 90%;
     .flowBlock {
       @include flowLabel;
       margin-bottom: 5rem;
       p.flowDesc {
         padding-left: 130px;
         // margin-top: 1rem;
+      }
+    }
+  }
+  @media screen and(max-width: 999px) {
+    .flow-container {
+      .flowBlock {
+        p.flowTtl {
+          font-size: 22px;
+          span {
+            font-size: 26px;
+            padding: 4px 16px 8px 22px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 799px) {
+    .flow-container {
+      .flowBlock {
+        p.flowTtl {
+          font-size: 16px;
+          padding: 16px 16px 16px 80px;
+          &::before {
+            width: 115px;
+          }
+          span {
+            font-size: 18px;
+            padding: 4px 0 0 10px;
+          }
+        }
+        p.flowDesc {
+          width: 95%;
+          margin: 1rem auto 0;
+          padding: 0;
+        }
       }
     }
   }

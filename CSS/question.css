@@ -63,7 +63,7 @@
 body#question .question-container {
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
   background: #f3f3f3;
   padding: 4rem 0 4rem;
 }
@@ -73,6 +73,10 @@ body#question .question-container h2 {
   margin: 3rem auto 2rem;
   font-weight: normal;
   padding-left: 1rem;
+}
+
+body#question .question-container .q-block {
+  padding: 0 20px;
 }
 
 body#question .question-container .accordion {

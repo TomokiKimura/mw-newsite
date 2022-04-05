@@ -190,7 +190,8 @@
   height: 500px;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  background-size: auto;
   position: relative;
   text-align: center;
   display: table;
@@ -268,6 +269,7 @@
     }
   }
   @media screen and(max-width: 999px) {
+    height: 300px;
     .cta {
       p {
         font-size: 1.25rem;
@@ -290,7 +292,11 @@
     }
   }
   @media screen and(max-width: 799px) {
-    height: 400px;
+    height: 200px;
+    &.cv-bg {
+      background-image: url(../IMG/common/sp-bg1.jpg);
+      width: 100%;
+    }
     .cta {
       p {
         width: 90%;
@@ -299,13 +305,6 @@
       .cta-btn {
         a span {
           padding: 10px 34px 10px 20px;
-          // &::after {
-          //   position: absolute;
-          //   top: 39%;
-          //   right: 18px;
-          //   width: 6px;
-          //   height: 6px;
-          // }
         }
       }
     }
@@ -434,17 +433,23 @@
     a {
       text-decoration: none;
       transition: 0.4s;
-      img {
-        width: 100%;
-        transition: transform 0.4s;
-        transition: 0.4s;
+      .pro-box-img {
+        height: 180px;
+        overflow: hidden;
+        text-align: center;
+        img {
+          width: auto;
+          height: 100%;
+          transition: transform 0.4s;
+          transition: 0.4s;
+        }
       }
       .pro-cate {
         margin: 1rem 0 0;
-        font-size: 14px;
+        font-size: 12px;
         color: #fff;
         display: inline-block;
-        padding: 2px 18px 2px;
+        padding: 1px 14px 0px;
         background-color: #333;
         border-radius: 15px;
         font-weight: bold;
@@ -470,7 +475,7 @@
   @media screen and(max-width: 999px) {
     display: block;
     .product-box {
-      width: 85%;
+      width: 50%;
       margin: 0 auto;
       margin-bottom: 4rem;
       // a {
@@ -490,6 +495,7 @@
   }
   @media screen and(max-width: 799px) {
     .product-box {
+      width: 90%;
       a {
         .pro-cate {
           font-weight: normal;
@@ -507,8 +513,9 @@
   }
 }
 @mixin blog-container {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -545,6 +552,18 @@
           transition: transform 0.4s;
         }
       }
+    }
+  }
+  @media screen and(max-width: 799px) {
+    display: block;
+    .blog-block {
+      width: 55%;
+      margin: 3rem auto 0;
+    }
+  }
+  @media screen and(max-width: 499px) {
+    .blog-block {
+      width: 80%;
     }
   }
 }

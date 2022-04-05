@@ -1,5 +1,5 @@
 body#price .price-container {
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -43,7 +43,7 @@ body#price .price-container h2 {
 
 body#price .price-container .web-wrap {
   border-bottom: 2px solid #dddddd;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 body#price .price-container .web-wrap .hp-block {
@@ -52,6 +52,7 @@ body#price .price-container .web-wrap .hp-block {
 
 body#price .price-container .web-wrap .hp-block .hp-wrap {
   display: flex;
+  justify-content: center;
   margin-top: 4rem;
 }
 
@@ -110,7 +111,7 @@ body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc .p-p4 u
 
 body#price .price-container .advertisement-wrap {
   margin-bottom: 9rem;
-  padding-top: 4rem;
+  padding-top: 8rem;
 }
 
 body#price .price-container .advertisement-wrap .advertisement-block {
@@ -118,13 +119,13 @@ body#price .price-container .advertisement-wrap .advertisement-block {
 }
 
 body#price .price-container .advertisement-wrap .advertisement-block table {
-  width: 80%;
-  margin-left: 1rem;
+  width: 100%;
   border-collapse: collapse;
 }
 
 body#price .price-container .advertisement-wrap .advertisement-block table tr th {
   width: 55%;
+  padding-left: 3rem !important;
 }
 
 body#price .price-container .advertisement-wrap .advertisement-block table tr td {
@@ -141,5 +142,99 @@ body#price .price-container .advertisement-wrap .advertisement-block table tr td
   font-size: 18px;
   letter-spacing: 1px;
   padding: 0.75rem;
+}
+
+@media screen and (max-width: 799px) {
+  body#price .price-container .select_btn ul li a span {
+    font-size: 14px;
+  }
+  body#price .price-container .web-wrap .hp-block h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    border: none;
+  }
+  body#price .price-container .web-wrap .hp-block h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #7db4e6;
+    margin: 1rem auto 0;
+  }
+  body#price .price-container .web-wrap .hp-block .hp-wrap {
+    display: block;
+    margin: 4rem auto 0;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #ddd;
+  }
+  body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-img img {
+    width: 100%;
+  }
+  body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc {
+    margin: 4rem auto 0;
+    width: 50%;
+  }
+  body#price .price-container .web-wrap .hp-block:nth-child(2) .hp-wrap {
+    border: none;
+  }
+  body#price .price-container .advertisement-wrap {
+    margin-bottom: 12rem;
+  }
+  body#price .price-container .advertisement-wrap .advertisement-block {
+    margin-bottom: 6rem;
+  }
+  body#price .price-container .advertisement-wrap .advertisement-block h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    border: none;
+  }
+  body#price .price-container .advertisement-wrap .advertisement-block h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #7db4e6;
+    margin: 1rem auto 0;
+  }
+  body#price .price-container .advertisement-wrap .advertisement-block table tr th {
+    width: 60%;
+  }
+  body#price .price-container .advertisement-wrap .advertisement-block table tr th,
+  body#price .price-container .advertisement-wrap .advertisement-block table tr td {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc {
+    margin: 4rem auto 0;
+    width: 100%;
+    text-align: center;
+  }
+  body#price .price-container .web-wrap .hp-block .hp-wrap .priceWrap-desc .p-p4 ul li::before {
+    display: none;
+  }
+  body#price .price-container .advertisement-wrap .advertisement-block table tr th {
+    padding-left: 0.5rem !important;
+    width: 55%;
+    padding: 1.5rem 0.5rem 0.5rem;
+  }
+  body#price .price-container .advertisement-wrap .advertisement-block table tr th, body#price .price-container .advertisement-wrap .advertisement-block table tr td {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=price.css.map */
