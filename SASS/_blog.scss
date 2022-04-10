@@ -1,0 +1,92 @@
+// -----------ブログ一覧
+body.post-type-archive-post {
+  .blog-container {
+    @include blog-container;
+  }
+}
+
+// -----------ブログ詳細
+body.single-post {
+  .blog-contents {
+    margin-top: 2rem;
+    .blogSingle-container {
+      margin: 0 auto 8rem;
+      max-width: 1100px;
+      width: 90%;
+      background: #f2f2f2;
+      padding: 5rem 0;
+      .main {
+        max-width: 800px;
+        margin: 0 auto;
+        p.b-date {
+          text-align: center;
+          color: #6d6d6d;
+        }
+        .blog-kv {
+          // margin: 5rem auto;
+          margin: 3rem auto 5rem;
+          width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+          // margin-bottom: 3rem;
+          margin-bottom: 0;
+          // margin-top: 5rem;
+          line-height: 3rem;
+        }
+        h2 {
+          background: #fff;
+          padding: 1rem;
+          margin: 3rem auto 1rem;
+        }
+        h3 {
+          border-left: 6px solid #4e67f5;
+          padding: 0.5rem 0.5rem 0.5rem 1rem;
+          margin: 1.5rem auto 1rem;
+        }
+        strong {
+          font-weight: bold;
+          margin-top: 1rem;
+        }
+        p a {
+          text-decoration: revert;
+          color: steelblue;
+        }
+        .wp-block-image {
+          margin: 3rem auto;
+        }
+        // 目次プラグイン
+        #toc_container.toc_light_blue {
+          margin: 2rem auto;
+          padding: 2rem;
+          ul {
+            margin-bottom: 1rem;
+            li {
+              margin-bottom: 0.25rem;
+              a {
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and(max-width: 999px) {
+    .blog-contents {
+      .blogSingle-container {
+        .main {
+          width: 90%;
+          .blog-kv {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}

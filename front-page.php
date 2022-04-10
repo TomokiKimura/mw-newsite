@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <div class="kv">
   <div class="slide">
-    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/kv1.jpg" alt="web制作の資料を見る人">
-    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/kv2.jpg" alt="PC画面に表示するweb制作の資料">
-    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/kv3.jpg" alt="画像表示されているパソコン">
+    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/kv1.jpg" alt="web制作のコンバージョン">
+    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/kv2.jpg" alt="PCに表示するweb制作の資料">
+    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/kv3.jpg" alt="アナリティクス解析を行うweb制作運用">
   </div>
   <div class="sp-slide">
-    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/sp-kv1.jpg" alt="web制作の資料を見る人">
-    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/sp-kv2.jpg" alt="PC画面に表示するweb制作の資料">
-    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/sp-kv3.jpg" alt="画像表示されているパソコン">
+    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/sp-kv1.jpg" alt="web制作のコンバージョン">
+    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/sp-kv2.jpg" alt="PCに表示するweb制作の資料">
+    <img src="<?php echo get_template_directory_uri(); ?>/IMG/top/sp-kv3.jpg" alt="アナリティクス解析を行うweb制作運用">
   </div>
   <p class="slider_range">
     表示時間：<input type="range" id="slide_speed" value="200" min="8000" max="10000">
@@ -63,7 +63,7 @@
     </div>
   </div>
   <div class="detail-btn">
-    <a href="#"><span>事業所概要をみる</span></a>
+    <a href="<?php echo home_url(); ?>/office"><span>事業所概要をみる</span></a>
   </div>
 </div>
 
@@ -72,7 +72,7 @@
   <div class="cta">
     <p>サイト制作に関するご相談や、お見積もりは無料で承っておりますので、お気軽にご連絡ください</p>
     <div class="cta-btn">
-      <a href="#"><span>無料相談をする</span></a>
+      <a href="<?php echo home_url(); ?>/contact"><span>無料相談をする</span></a>
     </div>
   </div>
 </div>
@@ -88,7 +88,7 @@
   <!-- <div class="service-container block-layout"> -->
   <div class="service-container">
     <div class="service-block">
-      <a href="service/homepage/index.html">
+      <a href="<?php echo home_url(); ?>/service/homepage">
         <div class="s-icon">
           <img src="<?php echo get_template_directory_uri(); ?>/IMG/service/service1.png" alt="ホームページアイコン">
         </div>
@@ -100,7 +100,7 @@
       </a>
     </div>
     <div class="service-block">
-      <a href="#">
+      <a href="<?php echo home_url(); ?>/service/lp">
         <div class="s-icon">
           <img src="<?php echo get_template_directory_uri(); ?>/IMG/service/service2.png" alt="ランディングページアイコン">
         </div>
@@ -112,7 +112,7 @@
       </a>
     </div>
     <div class="service-block">
-      <a href="#">
+      <a href="<?php echo home_url(); ?>/service/advertisement">
         <div class="s-icon">
           <img src="<?php echo get_template_directory_uri(); ?>/IMG/service/service3.png" alt="広告運用アイコン">
         </div>
@@ -124,7 +124,7 @@
       </a>
     </div>
     <div class="service-block">
-      <a href="#">
+      <a href="<?php echo home_url(); ?>/service/maintenance">
         <div class="s-icon">
           <img src="<?php echo get_template_directory_uri(); ?>/IMG/service/service4.png" alt="サイト保守・運用アイコン">
         </div>
@@ -161,28 +161,21 @@
         <div class="product-box">
           <a href="<?php the_permalink(); ?>">
 
-
-
-
             <?php if (has_post_thumbnail()) : ?>
               <div class="pro-box-img"><?php the_post_thumbnail('full'); ?></div>
             <?php else : ?>
               <div class="pro-box-img"><img src="<?php echo get_template_directory_uri(); ?>/IMG/common/noimage.png"></div>
             <?php endif; ?>
 
-
-
-
-
             <p class="pro-cate"><?php the_field('industry'); ?></p>
-              <?php
-              if (mb_strlen($post->post_title) > 13) {
-                $title = mb_substr($post->post_title, 0, 13);
-                echo '<p class="pro-name">' . $title . '...' . '</p>';
-              } else {
-                echo '<p class="pro-name">' . $post->post_title . '</p>';
-              }
-              ?>
+            <?php
+            if (mb_strlen($post->post_title) > 13) {
+              $title = mb_substr($post->post_title, 0, 13);
+              echo '<p class="pro-name">' . $title . '...' . '</p>';
+            } else {
+              echo '<p class="pro-name">' . $post->post_title . '</p>';
+            }
+            ?>
           </a>
         </div>
       <?php endwhile; ?>
@@ -191,7 +184,7 @@
 
   </div>
   <div class="detail-btn">
-    <a href="#"><span>実績一覧をみる</span></a>
+    <a href="<?php echo home_url(); ?>/product"><span>実績一覧をみる</span></a>
   </div>
 </div>
 <div class="question">
@@ -223,7 +216,7 @@
       </dl>
     </div>
     <div class="detail-btn">
-      <a href="#"><span>質問一覧をみる</span></a>
+      <a href="<?php echo home_url(); ?>/question"><span>質問一覧をみる</span></a>
     </div>
   </div>
 </div>
@@ -241,7 +234,6 @@
 
 
 
-
       <?php query_posts('posts_per_page=3'); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="blog-block">
@@ -251,7 +243,7 @@
                 <?php if (has_post_thumbnail()) : ?>
                   <?php the_post_thumbnail(array(160, 140)); ?>
                 <?php else : ?>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/test2.jpg">
+                  <img src="<?php echo get_template_directory_uri(); ?>/IMG/common/noimage.png">
                 <?php endif; ?>
               </div>
               <div class="blog-text">
@@ -283,49 +275,9 @@
       <?php endwhile;
       endif; ?>
 
-
-
-
-
-      <!-- <div class="blog-block">
-        <a href="#">
-          <div class="blog-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/IMG/test2.jpg" alt="">
-          </div>
-          <div class="blog-text">
-            <span>20210915</span>
-            <span>カテゴリー</span>
-            <h3>タイトルタイトルタイトルタイトル</h3>
-          </div>
-        </a>
-      </div>
-      <div class="blog-block">
-        <a href="#">
-          <div class="blog-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/IMG/test2.jpg" alt="">
-          </div>
-          <div class="blog-text">
-            <span>20210915</span>
-            <span>カテゴリー</span>
-            <h3>タイトルタイトルタイトルタイトル</h3>
-          </div>
-        </a>
-      </div>
-      <div class="blog-block">
-        <a href="#">
-          <div class="blog-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/IMG/test2.jpg" alt="">
-          </div>
-          <div class="blog-text">
-            <span>20210915</span>
-            <span>カテゴリー</span>
-            <h3>タイトルタイトルタイトルタイトル</h3>
-          </div>
-        </a>
-      </div> -->
     </div>
     <div class="detail-btn">
-      <a href="#"><span>ブログ一覧をみる</span></a>
+      <a href="<?php echo home_url(); ?>/blogs"><span>ブログ一覧をみる</span></a>
     </div>
   </div>
 </div>
@@ -334,7 +286,7 @@
   <div class="cta">
     <p>サイト制作に関するご相談や、お見積もりは無料で承っておりますので、お気軽にご連絡ください</p>
     <div class="cta-btn">
-      <a href="#"><span>無料相談をする</span></a>
+      <a href="<?php echo home_url(); ?>/contact"><span>無料相談をする</span></a>
     </div>
   </div>
 </div>

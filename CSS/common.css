@@ -60,7 +60,7 @@ a {
 body {
   font-family: Montserrat, 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
   color: #333;
-  padding-top: 90px;
+  padding-top: 95px;
 }
 
 body p {
@@ -443,44 +443,19 @@ header .wrapper .h-wrap .overlay.show li:nth-child(7) {
 }
 
 .breadCrumb {
-  margin-top: 95px;
+  margin-top: 95px !important;
   width: 90%;
   max-width: 1100px !important;
 }
 
-.breadCrumb ul {
-  display: flex;
-  padding: 3rem 0 0;
+.breadCrumb a {
+  color: #333;
 }
 
-.breadCrumb ul li {
-  list-style: none;
-  margin-right: 0.75rem;
-  background: url(../IMG/common/arrow-right.png) no-repeat right 3px;
-  background-size: 10px;
-  padding-right: 22px;
-}
-
-.breadCrumb ul li:last-child {
-  background: none;
-}
-
-@media screen and (max-width: 999px) {
-  .breadCrumb {
-    margin-top: 85px;
-  }
-  .breadCrumb ul li {
-    background: url(../IMG/common/arrow-right.png) no-repeat right 2px;
-    background-size: 8px;
-    padding-right: 22px;
-  }
-}
-
-@media screen and (max-width: 999px) {
-  .breadCrumb ul li {
-    background: url(../IMG/common/arrow-right.png) no-repeat right 1px;
-    background-size: 8px;
-  }
+.c-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 h1.page-h1 {
@@ -761,6 +736,9 @@ footer .footer-container .f-right li a:hover {
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 18px;
+  }
+  footer .footer-container .f-right {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=common.css.map */
