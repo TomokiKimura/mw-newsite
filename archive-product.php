@@ -13,7 +13,7 @@ get_header();
   <?php
   $args = array(
     'post_type' => 'product', // 投稿タイプを指定
-    'posts_per_page' => 4, // 表示する記事数
+    'posts_per_page' => 6, // 表示する記事数
   );
   $news_query = new WP_Query($args);
   if ($news_query->have_posts()) :
@@ -41,18 +41,16 @@ get_header();
           ?>
         </a>
       </div>
-
   <?php endwhile;
   endif;
   wp_reset_postdata();
   ?>
 
-
 </div>
 
-<div class="detail-btn">
+<!-- <div class="detail-btn">
   <a href="#"><span>事業所概要をみる</span></a>
-</div>
+</div> -->
 
 
 

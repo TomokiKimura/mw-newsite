@@ -26,7 +26,7 @@ get_header();
         <div class="priceWrap-desc">
           <span class="p-case">CASE1</span>
           <p class="p-p2">小規模な企業サイト<span>（静的サイト 5P）</span></p>
-          <p class="p-p3">¥ 350,000_<span>（税別）</span></p>
+          <p class="p-p3">¥ 200,000_<span>（税別）</span></p>
           <div class="p-p4">
             <ul>
               <li>オリジナルデザイン</li>
@@ -42,7 +42,7 @@ get_header();
         <div class="priceWrap-desc">
           <span class="p-case">CASE2</span>
           <p class="p-p2">ワードプレスの企業サイト<span>（動的サイト 6P）</span></p>
-          <p class="p-p3">¥ 500,000_<span>（税別）</span></p>
+          <p class="p-p3">¥ 300,000_<span>（税別）</span></p>
           <div class="p-p4">
             <ul>
               <li>オリジナルデザイン</li>
@@ -63,7 +63,7 @@ get_header();
         <div class="priceWrap-desc">
           <span class="p-case">CASE3</span>
           <p class="p-p2">ランディングページ</p>
-          <p class="p-p3">¥ 200,000_<span>（税別）</span></p>
+          <p class="p-p3">¥ 150,000_<span>（税別）</span></p>
           <div class="p-p4">
             <ul>
               <li>オリジナルデザイン</li>

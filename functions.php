@@ -41,3 +41,5 @@ function Change_objectlabel() {
 }
 add_action( 'init', 'Change_objectlabel' );
 add_action( 'admin_menu', 'Change_menulabel' );
+
+
